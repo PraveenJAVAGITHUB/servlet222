@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Servlet12</display-name>
+  <welcome-file-list>
+   
+    <welcome-file>index.jsp</welcome-file>
+   
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>HS</servlet-name>
+  <servlet-class>pack1.Servletr12</servlet-class>
+  <init-param>
+  <param-name>branch</param-name>
+  <param-value>ECE</param-value>
+  </init-param>
+  </servlet>
+   
+   <servlet>
+   <servlet-name>HS1</servlet-name>
+   <servlet-class>pack1.Servlet2</servlet-class>
+   <init-param>
+   <param-name>branch</param-name>
+   <param-value>CSE</param-value>
+   </init-param>
+   </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>HS</servlet-name>
+   <url-pattern>/servletpracting</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet-mapping>
+   <servlet-name>HS1</servlet-name>
+   <url-pattern>/Servlet2</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+     
+     <context-param>
+     <param-name>driverclass</param-name>
+     <param-value>com.mysql.jdbc.Driver</param-value>
+     </context-param>
+     
+     <context-param>
+     <param-name>url</param-name>
+     <param-value>jdbc:mysql://localhost:3306/lakshmikar</param-value>
+     </context-param>
+     
+     <context-param>
+     <param-name>username</param-name>
+     <param-value>root</param-value>
+     </context-param>
+     
+      <context-param>
+     <param-name>password1</param-name>
+     <param-value>root</param-value>
+     </context-param>
+     
+     
+     
+     
+</web-app>
